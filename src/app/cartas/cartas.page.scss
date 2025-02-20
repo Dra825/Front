@@ -1,0 +1,41 @@
+ion-grid {
+    width: 80%;
+    
+  }
+  ion-content {
+    --background:none;
+    background-image: url('../../assets/icon/fondo.gif');
+    height: 100%;
+    background-size: cover;
+   
+    
+    
+  }
+  #team {
+    padding: 20px; 
+    text-align: center; 
+    
+  }
+
+  h2{
+  background-color: rgba(0, 0, 0, 0.7); 
+  text-align: center; 
+  padding: 10px; 
+  border-radius: 5px;
+  max-width: 600px; 
+  margin-left: 33%;
+   }
+h3{
+    margin-top: 50%;
+    text-align: center; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    border-radius: 5px; 
+    max-width: 600px; 
+}
+
+#añadir {
+  margin-top: 50%;
+}
+

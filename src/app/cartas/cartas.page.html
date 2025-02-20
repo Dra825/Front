@@ -1,0 +1,99 @@
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-button (click)="volver_home()" shape="round" color="medium" size="large"> <ion-icon slot="start" name="arrow-back"></ion-icon> Home </ion-button>
+        <ion-button (click)="actualizar()" shape="round" color="medium" size="large">  Actualizar </ion-button>  
+        <h2 id="titulo"> Team:</h2> 
+            <ion-row>
+               
+
+                
+            <ion-col id="team">
+                @for (carta of carta_team; track carta; let i = $index, e = $even ) {
+                <img id="IMG" src="{{carta?.img}}" height="100px" width="100px">
+                <ion-button (click)="eliminar_team(i, carta)" shape="round" color="danger"> <ion-icon slot="start" name="trash"></ion-icon> Delete </ion-button>
+            }
+            </ion-col>
+       
+       
+        </ion-row>
+       
+       
+        @for (carta of cartas; track carta; let i = $index, e = $even ) {
+        <ion-row id="for">
+
+            <ion-col>
+
+                <h3> {{carta.nombre}} </h3>
+
+
+
+
+
+
+            </ion-col>
+
+            <ion-col>
+                <h3> Cantidad: {{carta.cantidad}} </h3>
+            </ion-col>
+
+            <ion-col>
+                <img id="IMG" src="{{carta.img}}">
+            </ion-col>
+
+            <ion-col>
+
+
+                <ion-button (click)="addCard(i, carta)" id="añadir" size="large" color="success"> <ion-icon slot="start" name="add"></ion-icon> Añadir al team </ion-button>
+
+
+            </ion-col>
+
+
+
+
+
+
+
+        </ion-row>
+        }
+
+        @for (item of items; track item; let i = $index, e = $even ) {
+            <ion-row id="for">
+    
+                <ion-col>
+    
+                    <h3> {{item.item_id}} </h3>
+    
+    
+    
+    
+    
+    
+                </ion-col>
+    
+                <ion-col>
+                    <h3> Cantidad: {{item.cantidad}} </h3>
+                </ion-col>
+    
+    
+                <ion-col>
+    
+    
+                    <ion-button (click)="Tomar_Equipar(i, item)" id="añadir" size="large" color="success"> <ion-icon slot="start" name="add"></ion-icon> Tomar/Equipar </ion-button>
+    
+    
+                </ion-col>
+    
+    
+    
+    
+    
+    
+    
+            </ion-row>
+            }
+      
+            <h2>Tiempo de poción disponible: {{tiempo?.tiempo}}</h2>
+    </ion-grid>
+
+</ion-content>

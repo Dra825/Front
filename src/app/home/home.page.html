@@ -1,0 +1,47 @@
+<ion-content>
+  @if (html === true) {
+ <h1> Rolls: {{info_tiradas.tiradas}} 💎{{usuario?.gemas}}</h1> 
+ <h1>Tiempo de poción disponible: {{tiempo?.tiempo}}</h1>
+ 
+  <ion-grid id="grid1">
+  <ion-row>
+    <ion-col>
+ <ion-button (click)="Inventario()" size="large" shape="round" color="tertiary"> <ion-icon slot="start" name="id-card-sharp" ></ion-icon> Inventario </ion-button>
+</ion-col>
+<ion-col>
+<ion-button (click)="Peleas()" size="large" shape="round" color="medium" > <ion-icon slot="start" name="shield-half-sharp" ></ion-icon> Peleas </ion-button>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+<ion-button (click)="Tienda()" size="large" shape="round" color="warning" > <ion-icon slot="start" name="pricetag" ></ion-icon> Tienda </ion-button>
+</ion-col>
+<ion-col>
+  <ion-button (click)="Activar()" size="large" shape="round" color="warning" >  Activar Pocion </ion-button>
+  </ion-col>
+
+  <ion-col>
+    <ion-button (click)="Pausar()" size="large" shape="round" color="warning" >  Pausar Pocion </ion-button>
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+
+<ion-grid id="center-bottom">
+    <ion-row>
+      <ion-col>
+        <ion-img (click)="roll()" src="assets/icon/Dado.png" id="Dado" class="botones"></ion-img> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+}
+@if (html === false) {
+<ion-grid id="center-bottom">
+  <ion-row>
+    <ion-col>
+      <ion-img src="{{carta?.img}}" id="cartas" ></ion-img> 
+    </ion-col>
+  </ion-row>
+</ion-grid>
+}
+</ion-content>

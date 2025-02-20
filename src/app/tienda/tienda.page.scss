@@ -1,0 +1,28 @@
+ion-content {
+    --background:none;
+    background-image: url('../../assets/icon/fondo.gif');
+    height: 100%;
+    background-size: cover;
+   
+    
+    
+  }
+
+#compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+h1 {
+  
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    border-radius: 5px; 
+    max-width: 600px; 
+    margin: 7px auto; 
+    margin-top: 20px;
+    text-align: center; 
+  }

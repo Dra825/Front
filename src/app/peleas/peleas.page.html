@@ -1,0 +1,89 @@
+
+
+<ion-content [fullscreen]="true">
+<ion-grid >
+    @if (botones !== true) {
+        <ion-button (click)="volver_home()" shape="round" color="medium" size="large"> <ion-icon slot="start" name="arrow-back"></ion-icon> Home </ion-button>
+<ion-row>
+   
+<ion-col id="centrar">
+<h3 [hidden]="PeleaBotoncitos"> Pelea 1 </h3>
+<ion-button (click)="PillarBotYUser(1)"  shape="round" color="success" size="large" class="botones" [disabled]="PeleaBotoncitos"><ion-icon slot="start" name="locate"></ion-icon> PELEAR </ion-button>
+</ion-col>
+
+<ion-col id="centrar">
+<h3 [hidden]="PeleaBotoncitos"> Pelea 2 </h3>
+<ion-button (click)="PillarBotYUser(2)" shape="round" color="success" size="large" class="botones" [disabled]="PeleaBotoncitos"><ion-icon slot="start" name="locate"></ion-icon> PELEAR </ion-button>
+</ion-col>
+
+    
+    
+    </ion-row>
+
+}
+@if (html === true) {
+   
+<ion-row id="texto">
+
+<ion-col>
+<h2 [innerHTML]="texto" class="texto">{{texto}}</h2> 
+</ion-col>
+
+</ion-row>
+
+
+
+<ion-row id="cartas">
+<ion-col>
+<ion-progress-bar [value]="progress_N" class="barritas" [color]="colorin_N"></ion-progress-bar>
+<img src="{{carta_activa_N.img}}" class="img">
+</ion-col>
+
+<ion-col>
+<ion-progress-bar [value]="progress_R" class="barritas" [color]="colorin_R"></ion-progress-bar>
+<img src="{{carta_activa_R.img}}" class="img">
+</ion-col>
+
+</ion-row>
+<ion-row id="texto">
+<ion-col>
+    <h1 class="texto">💚{{carta_activa_N.vida}}</h1>
+    
+    </ion-col>
+
+    <ion-col>
+    <h1 class="texto"> Cartas restantes: {{cartas_restantes_N}}</h1>
+    </ion-col>
+
+    <ion-col>
+    <h1 class="texto"> ⚔️{{carta_activa_N.dano}}</h1>
+    </ion-col>
+    
+    <ion-col>
+    <h1 class="texto">💚{{carta_activa_R.vida}}</h1>
+    
+    </ion-col>
+
+    <ion-col>
+    <h1 class="texto"> Cartas restantes: {{cartas_restantes_R}}</h1>
+    </ion-col>
+
+    <ion-col>
+    <h1 class="texto"> ⚔️{{carta_activa_R.dano}}</h1>
+    </ion-col>
+   
+</ion-row>
+
+}
+@if (claim === true) {
+<ion-row id="texto">
+    <ion-col>
+        <h1 class="texto" id="gemas">💎{{gemas}}</h1>
+        <ion-button (click)="Claim()" shape="round" color="success" size="large" class="botones" id="claim" ><ion-icon slot="start" name="checkmark-sharp"></ion-icon> CLAIM </ion-button>
+        </ion-col>      
+    </ion-row>
+}
+
+</ion-grid>
+
+</ion-content>

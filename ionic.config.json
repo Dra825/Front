@@ -1,0 +1,7 @@
+{
+  "name": "Practica_Examenm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,14 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid >
+        <ion-button (click)="volver_home()" shape="round" color="medium" size="large"> <ion-icon slot="start" name="arrow-back"></ion-icon> Home </ion-button>
+        <h1>💎{{gemas?.gemas}}</h1>
+<ion-row>
+
+<ion-col size="12">
+<ion-button (click)="Comprar(200, 'Pocion_Pro')" size="large" shape="round" color="success" id="compra" > <ion-icon slot="start" name="pricetag" ></ion-icon> Pocion Pro 200💎 </ion-button>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

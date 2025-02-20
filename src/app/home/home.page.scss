@@ -1,0 +1,81 @@
+#center-bottom {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;   
+    height: 90%;            
+  }
+
+#cartas {
+  
+    height: 1000px;
+    width: 700px;
+}
+
+h1 {
+  
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px; 
+  border-radius: 5px; 
+  max-width: 600px; 
+  margin: 7px auto; 
+  margin-top: 20px;
+  text-align: center; 
+}
+ion-content {
+  --background:none;
+  background-image: url('../../assets/icon/fondo.gif');
+  height: 100%;
+  background-size: cover;
+ 
+  
+  
+}
+
+@keyframes flotar {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+ion-button {
+  font-size: 30px; 
+  border-radius: 12px;
+  color: white; 
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 20%;
+  
+  
+}
+
+ion-button:hover {
+  transform: scale(1.1); 
+}
+.botones:hover {
+  transform: scale(1.3); 
+  cursor: pointer;
+}
+
+
+  #Dado {
+    width: 250px;  
+    height: 230px; 
+    animation: flotar 3s ease-in-out infinite;
+  }
+
+
+  ion-grid {
+    width: 80%;
+    
+  }
+
+  #grid1 {
+    height: 50px;
+  }
