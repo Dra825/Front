@@ -134,7 +134,7 @@ guardar_equipo(){
     this.equipo = response
 
 
-  });
+  }); 
 }
 volver_home() {
 
