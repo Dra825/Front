@@ -15,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
   imports: [ CommonModule, FormsModule, IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonGrid, IonRow, IonCol, IonItem, IonAvatar, IonLabel, IonButton, IonInput, IonIcon, IonImg]
 })
 export class HomePage implements OnInit {
- public url: string = 'http://localhost:3000'
+ public url: string = 'https://back-final-7xif.onrender.com'
  public info_tiradas: any = 0
  public user: any
  public usuario: any

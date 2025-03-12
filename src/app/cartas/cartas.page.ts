@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import {  IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonGrid, IonRow, IonCol, IonItem, IonAvatar, IonLabel, IonButton, IonInput, IonIcon  } from '@ionic/angular/standalone';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   templateUrl: './cartas.page.html',
   styleUrls: ['./cartas.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule,]
+  imports: [ IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonGrid, IonRow, IonCol, IonItem, IonAvatar, IonLabel, IonButton, IonInput, IonIcon, CommonModule, FormsModule,]
 })
 export class CartasPage implements OnInit {
 public user!: any
@@ -29,7 +29,7 @@ public tiempo: any
 public equipo: any
 public nada: number = 3
   constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) { }
-public url: string = 'http://localhost:3000'
+public url: string = 'https://back-final-7xif.onrender.com'
 
   ngOnInit() {
     this.user = this.route.snapshot.params;

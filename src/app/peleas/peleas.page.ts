@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 })
 export class PeleasPage implements OnInit {
 
-  public url: string = 'http://localhost:3000'
+  public url: string = 'https://back-final-7xif.onrender.com'
   public equipo_bot: any
   constructor(private http: HttpClient,private route: ActivatedRoute, private router: Router) { }
 public user: any

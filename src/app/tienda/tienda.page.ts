@@ -19,7 +19,7 @@ public contador: any = 0
 public brazalete = true
 public gemas: any
 
-public url: string = 'http://localhost:3000'
+public url: string = 'https://back-final-7xif.onrender.com'
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
@@ -41,7 +41,7 @@ public url: string = 'http://localhost:3000'
   }
   });
   }
-  
+   
   volver_home() {
     
 
